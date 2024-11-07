@@ -25,6 +25,7 @@ async function getWeatherData(city) {
 
 searchbtn.addEventListener("click", () => {
   getWeatherData(searchbox.value);
+  searchbox.value = "";
 });
 
 function setIcon(icon){
